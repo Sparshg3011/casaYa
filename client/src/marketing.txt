@@ -1,0 +1,32 @@
+const features = [
+  {
+    icon: <ClipboardCheck className="w-8 h-8 text-blue-600" />,
+    title: "AI-Powered Contracts",
+    description: "Generate legally-compliant lease agreements instantly with our advanced AI technology."
+  },
+  {
+    icon: <Workflow className="w-8 h-8 text-blue-600" />,
+    title: "Virtual Tours",
+    description: "Experience properties through immersive 360° virtual tours from anywhere, anytime."
+  },
+  {
+    icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+    title: "Market Intelligence",
+    description: "Make informed decisions with real-time market data and AI-driven property insights."
+  },
+  {
+    icon: <Star className="w-8 h-8 text-blue-600" />,
+    title: "Personalized Search",
+    description: "Find your perfect home with our intelligent property matching algorithm."
+  },
+  {
+    icon: <Users className="w-8 h-8 text-blue-600" />,
+    title: "Expert Support",
+    description: "Get guidance from our team of real estate professionals throughout your journey."
+  },
+  {
+    icon: <ThumbsUp className="w-8 h-8 text-blue-600" />,
+    title: "Seamless Experience",
+    description: "Enjoy a streamlined process from virtual viewing to digital contract signing."
+  }
+];

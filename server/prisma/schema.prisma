@@ -1,0 +1,207 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["public"]
+}
+
+model Tenant {
+  supabaseId            String           @id
+  firstName             String
+  lastName              String
+  email                 String           @unique
+  phone                 String?
+  verified              Boolean          @default(false)
+  profileImage          String?
+  backgroundCheckStatus String           @default("Not Started")
+  isRenting             Boolean          @default(false)
+  ssn                   String?
+  dateOfBirth           String?
+  currentAddress        String?
+  creditScore           Int?
+  lastCreditCheck       DateTime?
+  linkedinUrl           String?
+  facebookUrl           String?
+  instagramUrl          String?
+  creditCardLast4       String?
+  creditCardBrand       String?
+  creditCardExpiry      String?
+  occupation            String?
+  income                Float?
+  preferredMoveInDate   DateTime?
+  bio                   String?
+  plaidAccessToken      String?
+  plaidItemId           String?
+  plaidInstitutionId    String?
+  plaidInstitutionName  String?
+  plaidVerified         Boolean          @default(false)
+  plaidVerifiedAt       DateTime?
+  identityVerified      Boolean          @default(false)
+  identityVerifiedAt    DateTime?
+  verifiedFirstName     String?
+  verifiedLastName      String?
+  verifiedEmail         String?
+  verifiedPhone         String?
+  bankAccountVerified   Boolean          @default(false)
+  bankAccountVerifiedAt DateTime?
+  bankAccounts          Json?
+  verifiedIncome        Float?
+  incomeVerifiedAt      DateTime?
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
+  applications          Application[]
+  favorites             Favorite[]
+  payments              PaymentHistory[]
+
+  @@schema("public")
+}
+
+model Landlord {
+  supabaseId             String        @id
+  firstName              String
+  lastName               String
+  email                  String        @unique
+  phone                  String?
+  verified               Boolean       @default(false)
+  profileImage           String?
+  linkedinUrl            String?
+  facebookUrl            String?
+  instagramUrl           String?
+  websiteUrl             String?
+  companyName            String?
+  businessAddress        String?
+  taxId                  String?
+  bankName               String?
+  accountNumber          String?
+  routingNumber          String?
+  accountName            String?
+  eTransferEmail         String?
+  eTransferPhone         String?
+  preferredPaymentMethod String?
+  bio                    String?
+  yearsOfExperience      Int?
+  createdAt              DateTime      @default(now())
+  updatedAt              DateTime      @updatedAt
+  applications           Application[]
+  properties             Property[]
+
+  @@schema("public")
+}
+
+model Property {
+  id              String           @id @default(uuid())
+  address         String
+  city            String
+  state           String
+  postalCode      String
+  country         String
+  price           Float
+  description     String?
+  photos          Json?
+  lat             Float?
+  lng             Float?
+  propertyType    String
+  style           String
+  floorNumber     Int?
+  unitNumber      String?
+  availableDate   DateTime
+  postedDate      DateTime         @default(now())
+  totalSquareFeet Float?
+  bedrooms        Int
+  bathrooms       Float
+  roomDetails     Json?
+  hasParking      Boolean          @default(false)
+  parkingSpaces   Int?
+  heatingAndAC    String
+  laundryType     String
+  hasMicrowave    Boolean          @default(false)
+  hasRefrigerator Boolean          @default(false)
+  isPetFriendly   Boolean          @default(false)
+  hasBasement     Boolean?
+  numApplicants   Int              @default(0)
+  isLeased        Boolean          @default(false)
+  landlordId      String?
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  applications    Application[]
+  favorites       Favorite[]
+  payments        PaymentHistory[]
+  landlord        Landlord?        @relation(fields: [landlordId], references: [supabaseId])
+
+  @@schema("public")
+}
+
+model Application {
+  id               String            @id @default(uuid())
+  tenantId         String
+  propertyId       String
+  status           String            @default("Pending")
+  documents        Json?
+  hasId            Boolean           @default(false)
+  hasBankStatement Boolean           @default(false)
+  hasForm140       Boolean           @default(false)
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  landlordId       String
+  landlord         Landlord          @relation(fields: [landlordId], references: [supabaseId])
+  property         Property          @relation(fields: [propertyId], references: [id])
+  tenant           Tenant            @relation(fields: [tenantId], references: [supabaseId])
+  notes            ApplicationNote[]
+
+  @@schema("public")
+}
+
+model ApplicationNote {
+  id            String      @id @default(uuid())
+  applicationId String
+  content       String
+  creatorType   String
+  creatorId     String
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+
+  @@schema("public")
+}
+
+model Favorite {
+  id         String   @id @default(uuid())
+  tenantId   String
+  propertyId String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  property   Property @relation(fields: [propertyId], references: [id])
+  tenant     Tenant   @relation(fields: [tenantId], references: [supabaseId])
+
+  @@schema("public")
+}
+
+model PaymentHistory {
+  id         String   @id @default(uuid())
+  tenantId   String
+  propertyId String
+  amount     Float
+  date       DateTime @default(now())
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  property   Property @relation(fields: [propertyId], references: [id])
+  tenant     Tenant   @relation(fields: [tenantId], references: [supabaseId])
+
+  @@schema("public")
+}
+
+model NewsletterSubscriber {
+  id            String   @id @default(uuid())
+  name          String
+  email         String   @unique
+  subscribed_at DateTime
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  @@map("newsletter_subscribers")
+  @@schema("public")
+}

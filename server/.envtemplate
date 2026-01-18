@@ -1,0 +1,15 @@
+PORT=3000
+# In your Supabase dashboard, go to Project Settings (gear icon)
+    # Click on "API" in the sidebar
+    # You'll find:
+    # Project URL (anon/public)
+    # anon/public key
+    # service_role key (keep this secret!)
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=your_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+
+
+# Database Configuration (with connection pooling)
+DATABASE_URL="postgresql://postgres.fppvvbfapvbojovpielw:[Password]@aws-0-us-east-1.pooler.supabase.com:6543/postgres"

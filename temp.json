@@ -1,0 +1,1026 @@
+
+=== Plaid API Response: verifyTenantIdentity ===
+{
+  "accounts": [
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "balances": {
+        "available": 100,
+        "current": 110,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "0000",
+      "name": "Plaid Checking",
+      "official_name": "Plaid Gold Standard 0% Interest Checking",
+      "owners": [
+        {
+          "addresses": [
+            {
+              "data": {
+                "city": "Malakoff",
+                "country": "US",
+                "postal_code": "14236",
+                "region": "NY",
+                "street": "2992 Cameron Road"
+              },
+              "primary": true
+            },
+            {
+              "data": {
+                "city": "San Matias",
+                "country": "US",
+                "postal_code": "93405-2255",
+                "region": "CA",
+                "street": "2493 Leisure Lane"
+              },
+              "primary": false
+            }
+          ],
+          "emails": [
+            {
+              "data": "accountholder0@example.com",
+              "primary": true,
+              "type": "primary"
+            },
+            {
+              "data": "accountholder1@example.com",
+              "primary": false,
+              "type": "secondary"
+            },
+            {
+              "data": "extraordinarily.long.email.username.123456@reallylonghostname.com",
+              "primary": false,
+              "type": "other"
+            }
+          ],
+          "names": [
+            "Alberta Bobbeth Charleson"
+          ],
+          "phone_numbers": [
+            {
+              "data": "1112223333",
+              "primary": false,
+              "type": "home"
+            },
+            {
+              "data": "1112224444",
+              "primary": false,
+              "type": "work"
+            },
+            {
+              "data": "1112225555",
+              "primary": false,
+              "type": "mobile"
+            }
+          ]
+        }
+      ],
+      "persistent_account_id": "8cfb8beb89b774ee43b090625f0d61d0814322b43bff984eaf60386e",
+      "subtype": "checking",
+      "type": "depository"
+    },
+    {
+      "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+      "balances": {
+        "available": 200,
+        "current": 210,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "1111",
+      "name": "Plaid Saving",
+      "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+      "owners": [
+        {
+          "addresses": [
+            {
+              "data": {
+                "city": "Malakoff",
+                "country": "US",
+                "postal_code": "14236",
+                "region": "NY",
+                "street": "2992 Cameron Road"
+              },
+              "primary": true
+            },
+            {
+              "data": {
+                "city": "San Matias",
+                "country": "US",
+                "postal_code": "93405-2255",
+                "region": "CA",
+                "street": "2493 Leisure Lane"
+              },
+              "primary": false
+            }
+          ],
+          "emails": [
+            {
+              "data": "accountholder0@example.com",
+              "primary": true,
+              "type": "primary"
+            },
+            {
+              "data": "accountholder1@example.com",
+              "primary": false,
+              "type": "secondary"
+            },
+            {
+              "data": "extraordinarily.long.email.username.123456@reallylonghostname.com",
+              "primary": false,
+              "type": "other"
+            }
+          ],
+          "names": [
+            "Alberta Bobbeth Charleson"
+          ],
+          "phone_numbers": [
+            {
+              "data": "1112223333",
+              "primary": false,
+              "type": "home"
+            },
+            {
+              "data": "1112224444",
+              "primary": false,
+              "type": "work"
+            },
+            {
+              "data": "1112225555",
+              "primary": false,
+              "type": "mobile"
+            }
+          ]
+        }
+      ],
+      "persistent_account_id": "211a4e5d8361a3afb7a3886362198c7306e00a313b5aa944c20d34b6",
+      "subtype": "savings",
+      "type": "depository"
+    },
+    {
+      "account_id": "V8zx4ARzKwu3wg9ddrlNFLm9Aagvazt9LpW4J",
+      "balances": {
+        "available": 12060,
+        "current": 12060,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "9002",
+      "name": "Plaid Cash Management",
+      "official_name": "Plaid Growth Cash Management",
+      "owners": [
+        {
+          "addresses": [
+            {
+              "data": {
+                "city": "Malakoff",
+                "country": "US",
+                "postal_code": "14236",
+                "region": "NY",
+                "street": "2992 Cameron Road"
+              },
+              "primary": true
+            },
+            {
+              "data": {
+                "city": "San Matias",
+                "country": "US",
+                "postal_code": "93405-2255",
+                "region": "CA",
+                "street": "2493 Leisure Lane"
+              },
+              "primary": false
+            }
+          ],
+          "emails": [
+            {
+              "data": "accountholder0@example.com",
+              "primary": true,
+              "type": "primary"
+            },
+            {
+              "data": "accountholder1@example.com",
+              "primary": false,
+              "type": "secondary"
+            },
+            {
+              "data": "extraordinarily.long.email.username.123456@reallylonghostname.com",
+              "primary": false,
+              "type": "other"
+            }
+          ],
+          "names": [
+            "Alberta Bobbeth Charleson"
+          ],
+          "phone_numbers": [
+            {
+              "data": "1112223333",
+              "primary": false,
+              "type": "home"
+            },
+            {
+              "data": "1112224444",
+              "primary": false,
+              "type": "work"
+            },
+            {
+              "data": "1112225555",
+              "primary": false,
+              "type": "mobile"
+            }
+          ]
+        }
+      ],
+      "subtype": "cash management",
+      "type": "depository"
+    }
+  ],
+  "item": {
+    "auth_method": "INSTANT_AUTH",
+    "available_products": [
+      "assets",
+      "balance",
+      "signal",
+      "identity_match",
+      "income_verification",
+      "investments",
+      "liabilities",
+      "recurring_transactions"
+    ],
+    "billed_products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "consent_expiration_time": null,
+    "consented_products": [
+      "auth",
+      "identity",
+      "identity_match",
+      "income_verification",
+      "transactions",
+      "transfer"
+    ],
+    "error": null,
+    "institution_id": "ins_14",
+    "institution_name": "TD Bank",
+    "item_id": "AroeN37oj4uxE5833BjgiemP8X6eQqh147jvo",
+    "products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "update_type": "background",
+    "webhook": ""
+  },
+  "request_id": "kg6f8vbsJGvTVqc"
+}
+=====================================
+
+
+=== Plaid API Response: verifyTenantBankAccount - auth ===
+{
+  "accounts": [
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "balances": {
+        "available": 100,
+        "current": 110,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "0000",
+      "name": "Plaid Checking",
+      "official_name": "Plaid Gold Standard 0% Interest Checking",
+      "persistent_account_id": "8cfb8beb89b774ee43b090625f0d61d0814322b43bff984eaf60386e",
+      "subtype": "checking",
+      "type": "depository"
+    },
+    {
+      "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+      "balances": {
+        "available": 200,
+        "current": 210,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "1111",
+      "name": "Plaid Saving",
+      "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+      "persistent_account_id": "211a4e5d8361a3afb7a3886362198c7306e00a313b5aa944c20d34b6",
+      "subtype": "savings",
+      "type": "depository"
+    },
+    {
+      "account_id": "V8zx4ARzKwu3wg9ddrlNFLm9Aagvazt9LpW4J",
+      "balances": {
+        "available": 12060,
+        "current": 12060,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "9002",
+      "name": "Plaid Cash Management",
+      "official_name": "Plaid Growth Cash Management",
+      "subtype": "cash management",
+      "type": "depository"
+    }
+  ],
+  "item": {
+    "auth_method": "INSTANT_AUTH",
+    "available_products": [
+      "assets",
+      "balance",
+      "signal",
+      "identity_match",
+      "income_verification",
+      "investments",
+      "liabilities",
+      "recurring_transactions"
+    ],
+    "billed_products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "consent_expiration_time": null,
+    "consented_products": [
+      "auth",
+      "identity",
+      "identity_match",
+      "income_verification",
+      "transactions",
+      "transfer"
+    ],
+    "error": null,
+    "institution_id": "ins_14",
+    "institution_name": "TD Bank",
+    "item_id": "AroeN37oj4uxE5833BjgiemP8X6eQqh147jvo",
+    "products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "update_type": "background",
+    "webhook": ""
+  },
+  "numbers": {
+    "ach": [
+      {
+        "account": "1111222233330000",
+        "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+        "is_tokenized_account_number": false,
+        "routing": "011401533",
+        "wire_routing": "021000021"
+      },
+      {
+        "account": "1111222233331111",
+        "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+        "is_tokenized_account_number": false,
+        "routing": "011401533",
+        "wire_routing": "021000021"
+      },
+      {
+        "account": "1111222233339002",
+        "account_id": "V8zx4ARzKwu3wg9ddrlNFLm9Aagvazt9LpW4J",
+        "is_tokenized_account_number": false,
+        "routing": "011401533",
+        "wire_routing": "021000021"
+      }
+    ],
+    "bacs": [],
+    "eft": [],
+    "international": []
+  },
+  "request_id": "WwVxg3kvhUvcn9t"
+}
+=====================================
+
+
+=== Plaid API Response: verifyTenantIncome - transactions ===
+{
+  "accounts": [
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "balances": {
+        "available": 100,
+        "current": 110,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "0000",
+      "name": "Plaid Checking",
+      "official_name": "Plaid Gold Standard 0% Interest Checking",
+      "persistent_account_id": "8cfb8beb89b774ee43b090625f0d61d0814322b43bff984eaf60386e",
+      "subtype": "checking",
+      "type": "depository"
+    },
+    {
+      "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+      "balances": {
+        "available": 200,
+        "current": 210,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "1111",
+      "name": "Plaid Saving",
+      "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+      "persistent_account_id": "211a4e5d8361a3afb7a3886362198c7306e00a313b5aa944c20d34b6",
+      "subtype": "savings",
+      "type": "depository"
+    },
+    {
+      "account_id": "V8zx4ARzKwu3wg9ddrlNFLm9Aagvazt9LpW4J",
+      "balances": {
+        "available": 12060,
+        "current": 12060,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "9002",
+      "name": "Plaid Cash Management",
+      "official_name": "Plaid Growth Cash Management",
+      "subtype": "cash management",
+      "type": "depository"
+    }
+  ],
+  "item": {
+    "auth_method": "INSTANT_AUTH",
+    "available_products": [
+      "assets",
+      "balance",
+      "signal",
+      "identity_match",
+      "income_verification",
+      "investments",
+      "liabilities",
+      "recurring_transactions"
+    ],
+    "billed_products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "consent_expiration_time": null,
+    "consented_products": [
+      "auth",
+      "identity",
+      "identity_match",
+      "income_verification",
+      "transactions",
+      "transfer"
+    ],
+    "error": null,
+    "institution_id": "ins_14",
+    "institution_name": "TD Bank",
+    "item_id": "AroeN37oj4uxE5833BjgiemP8X6eQqh147jvo",
+    "products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "update_type": "background",
+    "webhook": ""
+  },
+  "request_id": "bBmHRnATlS2h8Oz",
+  "total_transactions": 8,
+  "transactions": [
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "account_owner": null,
+      "amount": 6.33,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": null,
+      "category_id": null,
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-02-01",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "Uber 072515 SF**POOL**",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "OTHER",
+        "primary": "OTHER"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_OTHER.png",
+      "transaction_code": null,
+      "transaction_id": "x36PlVb6zRTbxGAppDEQce4gaMqgNDT6G61xP",
+      "transaction_type": "unresolved",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+      "account_owner": null,
+      "amount": 25,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": [
+        "Payment",
+        "Credit Card"
+      ],
+      "category_id": "16001000",
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-19",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "CREDIT CARD 3333 PAYMENT *//",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT",
+        "primary": "LOAN_PAYMENTS"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_LOAN_PAYMENTS.png",
+      "transaction_code": null,
+      "transaction_id": "jMRAEVQRokuQd1JppWX3FVrQxyDQ7Wf6X6EP5",
+      "transaction_type": "special",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "account_owner": null,
+      "amount": 5.4,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": null,
+      "category_id": null,
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-19",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "Uber 063015 SF**POOL**",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "OTHER",
+        "primary": "OTHER"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_OTHER.png",
+      "transaction_code": null,
+      "transaction_id": "dPRpEV4RQNi4EKqaaBRpTjQ5V915vPtJWJkvE",
+      "transaction_type": "unresolved",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "account_owner": null,
+      "amount": -500,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": [
+        "Travel",
+        "Airlines and Aviation Services"
+      ],
+      "category_id": "22001000",
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-17",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "United Airlines",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "TRAVEL_FLIGHTS",
+        "primary": "TRAVEL"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_TRAVEL.png",
+      "transaction_code": null,
+      "transaction_id": "aaRMpVxRjPSxlpj33G7aiBMjXomjpWiZWZN8m",
+      "transaction_type": "special",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "account_owner": null,
+      "amount": 12,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": [
+        "Food and Drink",
+        "Restaurants",
+        "Fast Food"
+      ],
+      "category_id": "13005032",
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-16",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "McDonald's",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "FOOD_AND_DRINK_FAST_FOOD",
+        "primary": "FOOD_AND_DRINK"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+      "transaction_code": null,
+      "transaction_id": "4QAKL8qAlpT1GdqnnvlJFg5dNmGdAzhJ1JoXQ",
+      "transaction_type": "place",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "account_owner": null,
+      "amount": 4.33,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": [
+        "Food and Drink",
+        "Restaurants",
+        "Coffee Shop"
+      ],
+      "category_id": "13005043",
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-16",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "Starbucks",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "FOOD_AND_DRINK_COFFEE",
+        "primary": "FOOD_AND_DRINK"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_FOOD_AND_DRINK.png",
+      "transaction_code": null,
+      "transaction_id": "NQLGK1kLWMT9nEmlldqgFqjPA7wPv4fyDy3E1",
+      "transaction_type": "place",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "account_owner": null,
+      "amount": 89.4,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": null,
+      "category_id": null,
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-15",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "SparkFun",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "OTHER",
+        "primary": "OTHER"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_OTHER.png",
+      "transaction_code": null,
+      "transaction_id": "PMLqzpnLGju6ep899R7rF9k7olg78PCoMo1GM",
+      "transaction_type": "unresolved",
+      "unofficial_currency_code": null,
+      "website": null
+    },
+    {
+      "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+      "account_owner": null,
+      "amount": -4.22,
+      "authorized_date": null,
+      "authorized_datetime": null,
+      "category": null,
+      "category_id": null,
+      "check_number": null,
+      "counterparties": [],
+      "date": "2025-01-14",
+      "datetime": null,
+      "iso_currency_code": "USD",
+      "location": {
+        "address": null,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null,
+        "postal_code": null,
+        "region": null,
+        "store_number": null
+      },
+      "logo_url": null,
+      "merchant_entity_id": null,
+      "merchant_name": null,
+      "name": "INTRST PYMNT",
+      "payment_channel": "other",
+      "payment_meta": {
+        "by_order_of": null,
+        "payee": null,
+        "payer": null,
+        "payment_method": null,
+        "payment_processor": null,
+        "ppd_id": null,
+        "reason": null,
+        "reference_number": null
+      },
+      "pending": false,
+      "pending_transaction_id": null,
+      "personal_finance_category": {
+        "confidence_level": "LOW",
+        "detailed": "OTHER",
+        "primary": "OTHER"
+      },
+      "personal_finance_category_icon_url": "https://plaid-category-icons.plaid.com/PFC_OTHER.png",
+      "transaction_code": null,
+      "transaction_id": "71gBqAzgrLuK5oW99JrNtJljP9yjnxid9dZRZ",
+      "transaction_type": "unresolved",
+      "unofficial_currency_code": null,
+      "website": null
+    }
+  ]
+}
+=====================================
+
+
+=== Plaid API Response: verifyTenantBankAccount - balance ===
+{
+  "accounts": [
+    {
+      "account_id": "Xl3aPnX3kQiaV8q44o1KtQWrlo9EoAcbzPd4A",
+      "balances": {
+        "available": 100,
+        "current": 110,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "0000",
+      "name": "Plaid Checking",
+      "official_name": "Plaid Gold Standard 0% Interest Checking",
+      "persistent_account_id": "8cfb8beb89b774ee43b090625f0d61d0814322b43bff984eaf60386e",
+      "subtype": "checking",
+      "type": "depository"
+    },
+    {
+      "account_id": "D3EM7aZEQ4ToXVRmmGQatVwyp79R71u39Evg5",
+      "balances": {
+        "available": 200,
+        "current": 210,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "1111",
+      "name": "Plaid Saving",
+      "official_name": "Plaid Silver Standard 0.1% Interest Saving",
+      "persistent_account_id": "211a4e5d8361a3afb7a3886362198c7306e00a313b5aa944c20d34b6",
+      "subtype": "savings",
+      "type": "depository"
+    },
+    {
+      "account_id": "V8zx4ARzKwu3wg9ddrlNFLm9Aagvazt9LpW4J",
+      "balances": {
+        "available": 12060,
+        "current": 12060,
+        "iso_currency_code": "USD",
+        "limit": null,
+        "unofficial_currency_code": null
+      },
+      "mask": "9002",
+      "name": "Plaid Cash Management",
+      "official_name": "Plaid Growth Cash Management",
+      "subtype": "cash management",
+      "type": "depository"
+    }
+  ],
+  "item": {
+    "auth_method": "INSTANT_AUTH",
+    "available_products": [
+      "assets",
+      "balance",
+      "signal",
+      "identity_match",
+      "income_verification",
+      "investments",
+      "liabilities",
+      "recurring_transactions"
+    ],
+    "billed_products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "consent_expiration_time": null,
+    "consented_products": [
+      "auth",
+      "identity",
+      "identity_match",
+      "income_verification",
+      "transactions",
+      "transfer"
+    ],
+    "error": null,
+    "institution_id": "ins_14",
+    "institution_name": "TD Bank",
+    "item_id": "AroeN37oj4uxE5833BjgiemP8X6eQqh147jvo",
+    "products": [
+      "auth",
+      "identity",
+      "transactions"
+    ],
+    "update_type": "background",
+    "webhook": ""
+  },
+  "request_id": "NWpTsfSKiiorsNe"
+}
+=====================================
+
